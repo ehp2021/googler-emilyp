@@ -5,7 +5,7 @@ import { AuthProvider } from "./Contexts/AuthContext"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Dashboard from "./Dashboard"
 import Login from "./Login"
-
+import PrivateRoute from "./PrivateRoute"
 
 function App() {
   return (
@@ -18,10 +18,8 @@ function App() {
             <AuthProvider>
               <Routes>
                 <Route path="/" element={<Dashboard/>} />
-                {/* <Route path="/update-profile" component={UpdateProfile} /> */}
                 <Route path="/register" element={<Register/>}  />
                 <Route path="/login" element={<Login/>} />
-                {/* <Route path="/forgot-password" component={ForgotPassword} /> */}
               </Routes>
             </AuthProvider>
           </Router>
