@@ -3,7 +3,8 @@ import { Card, Button, Alert } from "react-bootstrap"
 import { useAuth } from "./Contexts/AuthContext"
 import { Link, useNavigate } from "react-router-dom"
 import NoteList from "./NoteList"
-import { nanoid } from 'nanoid';
+import { nanoid } from 'nanoid'
+import './Dashboard.css'
 
 export default function Dashboard() {
   const [notes, setNotes] = useState([
@@ -72,7 +73,12 @@ export default function Dashboard() {
         <Card.Body>
           <h1 className="notes-app-name">My Notes App</h1>
           {error && <Alert variant="danger">{error}</Alert>}
-          <div>Welcome, {currentUser.email}! </div> 
+          <div className='current-user'>Welcome, {currentUser.email}!  
+						<Button variant="link" onClick={handleLogout}>
+							Log Out
+						</Button>	
+					</div> 
+					<br></br>
         </Card.Body>
       </Card>
 
@@ -84,11 +90,6 @@ export default function Dashboard() {
 				/>
 			</div>
 
-      <div className="w-100 text-center mt-2">
-        <Button variant="link" onClick={handleLogout}>
-          Log Out
-        </Button>
-      </div>
     </div>
   )
 }

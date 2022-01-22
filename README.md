@@ -9,3 +9,11 @@ This app does the following:
 - Add tags to the notes
 - Delete notes
 - Edit notes
+
+## How it works
+
+This is app is built using React. 
+
+## Installation
+
+- This app can be forked and run locally by implementing the .env file by including your own Firebase credentials.
