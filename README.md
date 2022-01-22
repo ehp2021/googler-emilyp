@@ -1,4 +1,4 @@
-# googler-emilyp
+# FemHack Notes App
 
 This app does the following:
 - Login and register (no persistence required)
