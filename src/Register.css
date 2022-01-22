@@ -1,0 +1,19 @@
+
+.register-container {
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  background: rgb(99,166,153);
+  background: linear-gradient(90deg, rgba(99,166,153,1) 0%, rgba(173,201,231,1) 43%, rgba(50,87,186,1) 100%);
+}
+
+.register-button {
+  margin: 5px;
+  color: black;
+}
+
+.login-footer {
+  text-align: center;
+  margin-top: 10px;
+}
+

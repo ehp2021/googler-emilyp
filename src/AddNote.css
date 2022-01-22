@@ -1,0 +1,42 @@
+.new-note {
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  background: rgb(99,166,153);
+  background: linear-gradient(90deg, rgba(99,166,153,1) 0%, rgba(173,201,231,1) 43%, rgba(50,87,186,1) 100%);
+}
+
+.tag-container {
+  min-width: 60%;
+  max-width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 10px;
+  margin: 2px 5px 2px 0px;
+  color: white;
+}
+
+.tag-container input {
+  border: none;
+  flex: 1;
+  outline: none;
+  padding: 5;
+  background: white;
+  color: black;
+}
+.tag span {
+  margin-left: 5px;
+  cursor: pointer;
+}

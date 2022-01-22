@@ -1,0 +1,11 @@
+.note {
+  padding: 5px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 5px;
+}
+
+.note-footer {
+  margin-top: 5px;
+}
